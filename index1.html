@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html leng="en">
+  <head>
+    <meta charset="utf-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact us</title>
+            <!--home page -->
+        <link rel="stylesheet" href="index.html" type="text/html">
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <!-- Header navigation bar-->  
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active">
+                       <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Store</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#tweet">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#fb">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#gugl">Gmail</a>
+                            </li>
+                            <li>
+                                <a href="#git">Github</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+       </div>
+   </nav><!-- /navbar hearder-->
+
+<!-- start tab index-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="tabbable">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="active"><a class="active" href="#tweet" data-toggle="tab">Twitter</a></li>
+                  <li><a href="#fb" data-toggle="tab">Facebook</a></li>
+                  <li><a href="#gugl" data-toggle="tab">Gmail</a></li>
+                  <li><a href="#git" data-toggle="tab">Github</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tweet">
+                        <span> <h3>Email</h3></span>
+                        <input class="form-control" type="email" placeholder="enter email" required>  </input>
+                        <span> <h3>Password</h3></span>
+                        <input class="form-control" type="password" placeholder="enter password" required>  </input>
+                        <label class="checkbox"> 
+                            <input type="checkbox" value="remember-me"> Remember Me</input>
+                        </label>
+                        <button class="btn btn-block btn-primary" type="submit">Sign In</button>
+                    </div><!--sigin tab pane-->
+                    <div class="tab-pane" id="sign_up">
+                        <span> <h3>Name</h3></span>
+                        <input class="form-control" type="text" placeholder="enter name"></input>
+                        <span> <h3>City</h3></span>
+                        <input class="form-control" type="text" placeholder="City"></input>
+                        <span> <h3>Email</h3></span>
+                        <input class="form-control" type="email" placeholder="enter email">  </input>
+                        <span> <h3>Password</h3></span>
+                        <input class="form-control" type="password" placeholder="enter password">  </input>
+                        <span> <h3>Confirm Password</h3></span>
+                        <input class="form-control" type="password" placeholder="re-enter password">  </input>
+                        <br/>
+                        <button class="btn btn-block btn-primary" type="submit">Sign Up</button>
+                    </div><!--/sign up tab pane-->
+                    <div class="tab-pane" id="pwd">
+                        <span> <h3>Current Passowrd</h3></span>
+                        <input class="form-control" type="password" placeholder="current password">  </input>
+                        <span> <h3>Password</h3></span>
+                        <input class="form-control" type="password" placeholder="new password">  </input>
+                        <span> <h3>Confirm Password</h3></span>
+                        <input class="form-control" type="password" placeholder="re-enter password">  </input>
+                        <br/>
+                        <button class="btn btn-block btn-primary" type="submit">Change Password</button>
+                    </div><!--change password tab pane-->
+                    <div class="tab-pane" id="msj">
+                            <span><h3>First Name</h3></span>
+                            <input type="text" class="form-control" placeholder="Your First Name">
+                            <span><h3>Last Name</h3></span>
+                            <input type="text" class="form-control" placeholder="Your Last Name">
+                            <span><h3>Email Address</h3></span>
+                            <input type="text" class="form-control" placeholder="Your email address">
+                            <span><h3>Message</h3></span>
+                            <textarea name="message" id="message" class="form-control" rows="10"></textarea>
+                            <br/>
+                            <button type="submit" class="btn btn-primary btn-block">Send</button>
+                    </div>
+            </div><!-- tabbed -->
+        </div><!--/col-md-->
+    </div><!--/row-->
+</div> <!--/tab container-->
+<!--tab contents -->
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
